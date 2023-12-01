@@ -15,15 +15,15 @@ Wish you a happy day!
 ## Results on CheckerBoard Datasets
 **Visualization of CheckerBoard Datasets**
 <center>
-  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/19bc5280-1d09-45cb-8f90-0390afde7cd2" alt="checkerboard" width="300;">
-  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/e32fbfa6-5976-4d1e-9dd3-0957bfe49f4d" alt="checkerboard" width="300;">
-  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/d2abfac7-fdf1-4327-be8b-bd32bad2a61d" alt="checkerboard_maj"width="300;">
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/19bc5280-1d09-45cb-8f90-0390afde7cd2" alt="checkerboard" width="250;">
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/e32fbfa6-5976-4d1e-9dd3-0957bfe49f4d" alt="checkerboard" width="250;">
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/d2abfac7-fdf1-4327-be8b-bd32bad2a61d" alt="checkerboard_maj"width="250;">
 </center>
 
 **AUPRC variations within varying imbalance ratio (IR) and overlapping level**
 <center>
-  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/6d20138b-7774-4e98-acd9-571f407cdf76" alt="Overlap_AUPRC" width="450;">
-  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/40f6777f-c589-41b5-b30e-7bb8c61ff5dc" alt="IR_AUPRC" width="450;">
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/6d20138b-7774-4e98-acd9-571f407cdf76" alt="Overlap_AUPRC" width="400;">
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/40f6777f-c589-41b5-b30e-7bb8c61ff5dc" alt="IR_AUPRC" width="400;">
 </center>
 
 **AUPRC results on 7 canonical classifiers**
