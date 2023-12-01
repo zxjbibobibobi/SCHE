@@ -130,7 +130,6 @@ def get_baseline(n_estimators=100, base_estimator=None, random_state=None):
 def get_classifiers(random_state=None):
     return [
         # AdaBoostClassifier(n_estimators=10),
-        # # # GaussianNB(),
         DecisionTreeClassifier(random_state=random_state),
         # LogisticRegression(random_state=random_state),
         # KNeighborsClassifier(),
