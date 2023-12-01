@@ -15,9 +15,9 @@ Wish you a happy day!
 ## Results
 
 ### Results on CheckerBoard Datasets
-![Overlap_AUCPRC](https://github.com/zxjbibobibobi/SCHE/assets/57565621/6d20138b-7774-4e98-acd9-571f407cdf76)
-![IR_AUCPRC](https://github.com/zxjbibobibobi/SCHE/assets/57565621/40f6777f-c589-41b5-b30e-7bb8c61ff5dc)
 ![checkerboard_min_dataset](https://github.com/zxjbibobibobi/SCHE/assets/57565621/44e1344c-c921-423a-a222-c090250e8633)
 ![checkerboard_maj_dataset](https://github.com/zxjbibobibobi/SCHE/assets/57565621/f1c06195-fa84-4736-b01f-7b537ca51a3d)
 ![checkerboard_dataset](https://github.com/zxjbibobibobi/SCHE/assets/57565621/1d1fce0b-a8eb-4dfc-b476-305cd42b467c)
-![result-checkerboard](https://github.com/zxjbibobibobi/SCHE/assets/57565621/c751869b-4c25-4778-a156-2002379f7cdc)
+![Overlap_AUCPRC](https://github.com/zxjbibobibobi/SCHE/assets/57565621/6d20138b-7774-4e98-acd9-571f407cdf76)
+![IR_AUCPRC](https://github.com/zxjbibobibobi/SCHE/assets/57565621/40f6777f-c589-41b5-b30e-7bb8c61ff5dc)
+![result-checkerboard](https://github.com/zxjbibobibobi/SCHE/assets/57565621/c751869b-4c25-4778-a156-2002379f7cdc,style="zoom:24%;)
