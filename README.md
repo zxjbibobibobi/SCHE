@@ -49,7 +49,7 @@ Wish you a happy day!
 
 **Compared with ensemble methods**
 <center>
-  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/c2cbd166-002a-43d9-b284-1d87d644735f" alt="Results on Massive Highly Imbalanced Datasets" width="900;">
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/29de5ffd-96d6-46c9-a49f-426a20e1aee0" alt="Results on Massive Highly Imbalanced Datasets" width="900;">
 </center>
 
 
