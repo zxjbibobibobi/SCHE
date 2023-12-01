@@ -30,3 +30,11 @@ Wish you a happy day!
 <center>
   <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/c751869b-4c25-4778-a156-2002379f7cdc" alt="Result on CheckerBoard" width="900;">
 </center>
+
+## Results on Small-scale Real-world Datasets
+<center>
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/bc4fda6b-9c9d-48a2-83ad-3082b1c45a70" alt="Results on Small-scale Real-world Datasets" width="900;">
+</center>
+
+
+## Results on Massive Highly Imbalanced Datasets
