@@ -28,5 +28,5 @@ Wish you a happy day!
 
 **AUPRC results on 7 canonical classifiers**
 <center>
-  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/c751869b-4c25-4778-a156-2002379f7cdc" alt="Result on CheckerBoard" width="600;">
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/c751869b-4c25-4778-a156-2002379f7cdc" alt="Result on CheckerBoard">
 </center>
