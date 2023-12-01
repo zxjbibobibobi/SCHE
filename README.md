@@ -13,12 +13,14 @@ Due to limited time, we haven't well organized the whole structure of our projec
 
 Wish you a happy day!
 ## Results on CheckerBoard Datasets
-
+CheckerBoard Datasets
 <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/19bc5280-1d09-45cb-8f90-0390afde7cd2" alt="checkerboard" width="300;">
 <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/e32fbfa6-5976-4d1e-9dd3-0957bfe49f4d" alt="checkerboard_min" width=300;">
 <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/d2abfac7-fdf1-4327-be8b-bd32bad2a61d" alt="checkerboard_maj" width="300;">
 
+AUPRC variations within varying imbalance ratio (IR) and overlapping level
+<img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/6d20138b-7774-4e98-acd9-571f407cdf76" alt="Overlap_AUPRC" width="450;">
+<img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/40f6777f-c589-41b5-b30e-7bb8c61ff5dc" alt="IR_AUPRC" width="450;">
 
-![Overlap_AUCPRC](https://github.com/zxjbibobibobi/SCHE/assets/57565621/6d20138b-7774-4e98-acd9-571f407cdf76)
-![IR_AUCPRC](https://github.com/zxjbibobibobi/SCHE/assets/57565621/40f6777f-c589-41b5-b30e-7bb8c61ff5dc)
-![result-checkerboard](https://github.com/zxjbibobibobi/SCHE/assets/57565621/c751869b-4c25-4778-a156-2002379f7cdc,style="zoom:24%;)
+AUPRC results on 7 canonical classifiers
+<img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/c751869b-4c25-4778-a156-2002379f7cdc" alt="Result on CheckerBoard" width="600;">
