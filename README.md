@@ -9,3 +9,5 @@ The **Experiments** folder contains the scripts we use for performance evaluatio
 The implementation details of SCHE is in self_paced_curriculum_ensemble.py.
 
 The reproductivity details of the demonstration in the paper are also contained in our code:3.
+
+Wish you a happy day!
