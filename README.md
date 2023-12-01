@@ -38,6 +38,19 @@ Wish you a happy day!
 
 
 ## Results on Massive Highly Imbalanced Datasets
+**Compared with 5 baselines**
 <center>
   <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/6c44bb37-ef9f-4390-9512-9445454f62b6" alt="Results on Massive Highly Imbalanced Datasets" width="900;">
 </center>
+
+**Compared with resampling methods**
+<center>
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/fa77a78a-4d62-449d-a217-a7c0072b701c" alt="Results on Massive Highly Imbalanced Datasets" width="900;">
+</center>
+
+**Compared with ensemble methods**
+<center>
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/c2cbd166-002a-43d9-b284-1d87d644735f" alt="Results on Massive Highly Imbalanced Datasets" width="900;">
+</center>
+
+
