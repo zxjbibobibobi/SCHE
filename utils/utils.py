@@ -3,7 +3,6 @@ from sklearn.metrics import recall_score, precision_score, precision_recall_curv
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier
 from sklearn.neighbors import KNeighborsClassifier
@@ -22,9 +21,6 @@ from DAPS.DAPS import DAPS
 
 def fetch_dataset_by_name(name):
     """fetching the preprocessed data with the file name"""
-    # df = pd.read_csv('F:/研究生/SelfPacedHybridEnsemble/project/SPHE/data/' + name + '.csv')
-    # df = pd.read_csv('/home/data/zxj/SPHE/data/' + name + '.csv')
-    df = pd.read_csv('D:/研究生/研一/Project/SPHE/data/' + name + '.csv')
     X = df.drop('Class', axis=1)
     y = df['Class']
     return X, y
@@ -132,7 +128,6 @@ def get_baseline(n_estimators=100, base_estimator=None, random_state=None):
 def get_classifiers(random_state=None):
     return [
         # AdaBoostClassifier(n_estimators=10),
-        # # # GaussianNB(),
         DecisionTreeClassifier(random_state=random_state),
         # LogisticRegression(random_state=random_state),
         # KNeighborsClassifier(),
