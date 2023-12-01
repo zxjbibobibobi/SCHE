@@ -13,7 +13,7 @@ Due to limited time, we haven't well organized the whole structure of our projec
 
 Wish you a happy day!
 ## Results on CheckerBoard Datasets
-**Visualization of CheckerBoard Datasets**
+**Visualization of CheckerBoard Dataset**
 <center>
   <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/19bc5280-1d09-45cb-8f90-0390afde7cd2" alt="checkerboard" width="250;">
   <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/e32fbfa6-5976-4d1e-9dd3-0957bfe49f4d" alt="checkerboard" width="250;">
