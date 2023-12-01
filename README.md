@@ -20,7 +20,7 @@ Wish you a happy day!
   <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/d2abfac7-fdf1-4327-be8b-bd32bad2a61d" alt="checkerboard_maj"width="250;">
 </center>
 
-**AUPRC within varying overlapping level (controlled by covariance factor) and imbalance ratio (IR)
+**AUPRC within varying overlapping level (controlled by covariance factor) and imbalance ratio (IR)**
 <center>
   <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/6d20138b-7774-4e98-acd9-571f407cdf76" alt="Overlap_AUPRC" width="400;">
   <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/40f6777f-c589-41b5-b30e-7bb8c61ff5dc" alt="IR_AUPRC" width="400;">
