@@ -280,47 +280,7 @@ class SelfPacedCurriculumEnsemble(BaseEnsemble):
         else:
 
 
-            self.record_ih[i_iter] = {}
-            self.record_dh[i_iter] = {}
-
-
-            w_instantaneous_hardness = hardness_weight_scheduler_function("linear")(i_iter, self.n_estimators)
-            # w_instantaneous_hardness = 0
-            w_local_hardness = 1 - w_instantaneous_hardness
-            # w_local_hardness = 0
-            instantaneous_hardness = self.hardness_func(self.y_min,
-                                                        self.y_min_pred_proba_buffer[:, self.class_index_min])
-            os_num_ih = self.os_num_ih
-            for label in self.cluster_sample_num:
-                self.record_dh[i_iter][str(label)] = {}
-                self.record_ih[i_iter][str(label)] = {}
-                ih_contribution = []
-                n_cluster_sample = self.cluster_sample_num[label]
-                for ih in os_num_ih[label]:
-
-                    ih_index = self.X_min_ih_index[label][ih]
-                    abs_index = np.array(self.cluster_index[label])[ih_index]
-                    ih_instantaneous_hardness = instantaneous_hardness[abs_index]
-                    ih_local_hardness = np.full(len(ih_instantaneous_hardness), fill_value=ih)
-                    ih_dynamic_hardness = w_instantaneous_hardness * ih_instantaneous_hardness + \
-                                          w_local_hardness * ih_local_hardness
-
-                    if ih == 0:
-                        pass
-                    else:
-                        self.record_ih[i_iter][str(label)][ih] = list(ih_dynamic_hardness)
-                        self.record_dh[i_iter][str(label)][ih] = list(ih_instantaneous_hardness)
-                    ih_contribution.append(sum(ih_dynamic_hardness) / len(ih_dynamic_hardness))
-                ih_contribution = np.array(ih_contribution)
-
-                ih_sample_num = n_cluster_sample * ih_contribution / sum(ih_contribution)
-                ih_sample_num[np.isnan(ih_sample_num)] = 0
-                ih_sample_num[np.isinf(ih_sample_num)] = 0
-                ih_sample_num = ih_sample_num.astype(int) + 1
-                ih_key = list(os_num_ih[label].keys())
-                for i in range(len(ih_sample_num)):
-                    os_num_ih[label][ih_key[i]] = ih_sample_num[i]
-            self.os_num_ih = os_num_ih
+            print("not released yet")
             return
 
     def init_data_statistics(self, X, y, label_maj, label_min, to_console=False):
@@ -431,7 +391,6 @@ class SelfPacedCurriculumEnsemble(BaseEnsemble):
         X_min_ih_index = {}
         os_num_ih = {}
         for label in cluster_sample_num.keys():
-            # 当前簇中样本
             X_sample = X_min[cluster_index[label]]
             cluster_instance_hardness = class1_inst_hardness[cluster_index[label]]
 
@@ -558,59 +517,7 @@ class SelfPacedCurriculumEnsemble(BaseEnsemble):
         return sklearn.metrics.average_precision_score(
             y, self.predict_proba(X)[:, self.class_index_min])
 
-    def self_paced_over_sampling(self):
-        X_min_train_epoch = self.X_min_train_epoch.copy()
-        y_min_train_epoch = self.y_min_train_epoch.copy()
 
-        for label in self.cluster_sample_num.keys():
-
-            X_sample = self.X_min[self.cluster_index[label]]
-            if len(self.os_num_ih) > 0:
-                synthetic_samples = IH_SMOTE(cluster_X_min=X_sample, target_index=self.X_min_ih_index[label],
-                                             _os_num_ih=self.os_num_ih[label], random_state=self.random_state,
-                                             _k=self.n_neighbors, i_iter=self.n_estimators)
-                if synthetic_samples is not None:
-                    X_min_train_epoch = np.vstack(
-                        (X_min_train_epoch, synthetic_samples)
-                    )
-                    y_min_train_epoch = np.hstack(
-                        (y_min_train_epoch, np.ones(len(X_min_train_epoch) - len(y_min_train_epoch))))
-            else:
-                synthetic_samples = my_SMOTE(_X_min=X_sample, _k=self.n_neighbors, random_state=self.random_state,
-                                             _os_num=self.cluster_sample_num[label], i_iter=self.n_estimators)
-                if synthetic_samples is not None:
-                    X_min_train_epoch = np.vstack(
-                        (X_min_train_epoch, synthetic_samples)
-                    )
-                    y_min_train_epoch = np.hstack(
-                        (y_min_train_epoch, np.ones(len(X_min_train_epoch) - len(y_min_train_epoch))))
-
-        return X_min_train_epoch, y_min_train_epoch
-
-    def self_paced_over_sampling_acc(self):
-        X_min_train_epoch = self.X_min_train_epoch.copy()
-        y_min_train_epoch = self.y_min_train_epoch.copy()
-
-        all_synthetic_samples = Parallel(n_jobs=self.n_jobs, verbose=self.verbose, **self._parallel_args())(
-            delayed(_parallel_cluster_sampling)(
-                self.X_min, self.cluster_index, label, self.os_num_ih, self.X_min_ih_index, self.random_state,
-                self.n_neighbors, self.n_estimators, self.cluster_sample_num
-            )for label in self.cluster_sample_num.keys()
-        )
-
-        synthetic_samples = []
-        for cluster_samples in all_synthetic_samples:
-            if len(cluster_samples) == 0:
-                pass
-            else:
-                if len(synthetic_samples) == 0:
-                    synthetic_samples = cluster_samples
-                else:
-                    synthetic_samples = np.vstack((synthetic_samples, cluster_samples))
-        if len(synthetic_samples) > 0:
-            X_min_train_epoch = np.vstack([synthetic_samples, X_min_train_epoch])
-            y_min_train_epoch = np.full(X_min_train_epoch.shape[0], y_min_train_epoch[0])
-        return X_min_train_epoch, y_min_train_epoch
 
 
 def _parallel_cluster_sampling(X_min, cluster_index, label, os_num_ih, X_min_ih_index, random_state, n_neighbors,
