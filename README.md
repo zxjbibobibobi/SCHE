@@ -38,3 +38,6 @@ Wish you a happy day!
 
 
 ## Results on Massive Highly Imbalanced Datasets
+<center>
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/6c44bb37-ef9f-4390-9512-9445454f62b6" alt="Results on Massive Highly Imbalanced Datasets" width="900;">
+</center>
