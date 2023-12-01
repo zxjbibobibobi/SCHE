@@ -1,5 +1,5 @@
 # Learning from Massive Highly Imbalanced Data via Hybrid-sampling with Self-paced Curriculum  
-[SCHE-process.pdf](https://github.com/zxjbibobibobi/SCHE/files/13529985/SCHE-process.pdf)
+![SCHE-process](https://github.com/zxjbibobibobi/SCHE/assets/57565621/a7ca65e5-76db-4d50-a3fd-8ad7e809f9fd)
 
 This paper propose a novel imbalnaced learning framework:Self-paced Curriculum Hybrid-sampling based Ensemble (SCHE).
 
