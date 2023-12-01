@@ -33,7 +33,7 @@ Wish you a happy day!
 
 ## Results on Small-scale Real-world Datasets
 <center>
-  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/53c28e2c-686f-4576-b864-1e0f50e1ee87" alt="Results on Small-scale Real-world Datasets" width="900;">
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/02ae3cdd-d123-4bcb-8bd8-85ea25d13825" alt="Results on Small-scale Real-world Datasets" width="900;">
 </center>
 
 ## Results on Massive Highly Imbalanced Datasets
