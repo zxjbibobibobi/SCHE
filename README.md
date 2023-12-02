@@ -43,8 +43,9 @@ Wish you a happy day! Contact the author at *zxjbibobibobi@163.com*.
 </center>
 
 **Compared with resampling methods**
+
 <center>
-  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/fa77a78a-4d62-449d-a217-a7c0072b701c" alt="Results on Massive Highly Imbalanced Datasets" width="900;">
+  <img src="https://github.com/zxjbibobibobi/SCHE/assets/57565621/ec2815a3-c356-4cbd-a934-a0b4c96b4342" alt="Results on Massive Highly Imbalanced Datasets" width="900;">
 </center>
 
 **Compared with ensemble methods**
