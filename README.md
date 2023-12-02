@@ -11,7 +11,7 @@ The reproductivity details of the demonstration in the paper are also contained 
 
 Due to limited time, we haven't well organized the whole structure of our project. Soon we will make the code friendly to run.
 
-Wish you a happy day! Contact the author at *zengxingjian@seu.edu.cn*.
+Wish you a happy day! Contact the author at *zxjbibobibobi@163.com*.
 ## Results on CheckerBoard Datasets
 **Visualization of CheckerBoard Dataset**
 <center>
